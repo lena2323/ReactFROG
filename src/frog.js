@@ -17,8 +17,7 @@ function Frog() {
           className="Frog-link"
           href="https://www.youtube.com/watch?v=JJbqbqobBaI&ab_channel=OrbeezNutzz"
           target="_blank"
-          rel="noopener noreferrer"
-        >
+          rel="noopener noreferrer">
           but the frog fucks good
         </a>
       </header>
