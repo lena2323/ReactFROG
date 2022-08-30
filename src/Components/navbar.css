@@ -5,6 +5,9 @@
     width: 100vw;
     height: 100px;
     justify-content: space-between;
+    -webkit-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
 }
 
 .navbar-container ul{
@@ -13,14 +16,11 @@
     flex-flow: row wrap;
     margin-top: auto;
     margin-bottom: auto;
-
     height: 100px;
-
 }
 
 .navbar-container li{
     background-color: rgb(102, 102, 102);
-
     padding: 20px;
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     letter-spacing: 0.1em;
@@ -29,18 +29,15 @@
 
 .navbar-container li:hover{
     background-color: yellowgreen;
-
 }
 
 .first-in-nav{
     margin-right: 0px;
     margin-right: -200px;
-
 }
 
 .second-in-nav{
     margin-right: -150px;
-
 }
 
 .frog-in-navbar{
@@ -54,6 +51,5 @@
     padding-right: 100px;
     margin-right: 70px;
     padding-left: 50px;
-
 }
 
