@@ -1,20 +1,20 @@
-.App {
+.FrogContainer {
   text-align: center;
 }
 
-.App-frog {
+.Frog{
   height: 30vmin;
   pointer-events: none;
   margin-bottom: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-frog {
-    animation: App-frog-spin infinite 20s linear;
+  .Frog {
+    animation: frog-spin infinite 20s linear;
   }
 }
 
-.App-header {
+.Frog-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -25,11 +25,11 @@
   color: white;
 }
 
-.App-link {
+.Frog-link {
   color: #28f34a;
 }
 
-@keyframes App-frog-spin {
+@keyframes frog-spin {
   from {
     transform: rotate(0deg);
   }

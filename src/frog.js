@@ -1,16 +1,16 @@
-import frog from './1297464-4caf50.svg';
-import './App.css';
+import frogimage from './frogimage.svg';
+import './frog.css';
 
-function App() {
+function Frog() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={frog} className="App-frog" alt="frog" />
+    <div className="FrogContainer">
+      <header className="Frog-header">
+        <img src={frogimage} className="Frog" alt="frog" />
         <p>
           I DON'T KNOW WHAT THE FUCK IS GOING ON
         </p>
         <a
-          className="App-link"
+          className="Frog-link"
           href="https://www.youtube.com/watch?v=JJbqbqobBaI&ab_channel=OrbeezNutzz"
           target="_blank"
           rel="noopener noreferrer"
@@ -22,4 +22,4 @@ function App() {
   );
 }
 
-export default App;
+export default Frog;
