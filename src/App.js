@@ -1,13 +1,13 @@
-import logo from './logo.svg';
+import frog from './1297464-4caf50.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={frog} className="App-frog" alt="frog" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          I DON'T KNOW WHAT THE FUCK IS GOING ON
         </p>
         <a
           className="App-link"
@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          but the frog fucks good
         </a>
       </header>
     </div>
