@@ -1,5 +1,5 @@
 .navbar-container{
-    background-color: rgb(176, 221, 221);
+    background-color: rgb(27, 27, 27);
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
@@ -12,20 +12,24 @@
     list-style: none;
     flex-flow: row wrap;
     margin-top: auto;
-    height: 100px;
     margin-bottom: auto;
 
+    height: 100px;
 
 }
 
 .navbar-container li{
-    background-color: yellowgreen;
+    background-color: rgb(102, 102, 102);
+
     padding: 20px;
-    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+    clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
+    letter-spacing: 0.1em;
+    padding-top: 26px;
 }
 
 .navbar-container li:hover{
-    background-color: aquamarine;
+    background-color: yellowgreen;
+
 }
 
 .first-in-nav{
@@ -35,7 +39,7 @@
 }
 
 .second-in-nav{
-    margin-right: -140px;
+    margin-right: -150px;
 
 }
 
@@ -49,6 +53,7 @@
 .navbar-container a{
     padding-right: 100px;
     margin-right: 70px;
-    padding-left: 120px;
+    padding-left: 50px;
+
 }
 
