@@ -1,14 +1,24 @@
 .navbar-container{
     background-color: aqua;
-    
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    justify-content: space-between;
 }
 
 .navbar-container ul{
-    list-style: none;
     display: flex;
+    list-style: none;
     flex-flow: row wrap;
 }
 
 .navbar-container li{
     padding: 20px;
+    
+}
+
+.frog-in-navbar{
+    height: 70px;
+    margin-top: 30px;
+    margin-left: 30px;
 }
