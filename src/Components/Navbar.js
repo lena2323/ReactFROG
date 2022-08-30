@@ -4,8 +4,8 @@ const navbar = () => {
     <nav className="navbar-container">
         <img src={frogimage} className="frog-in-navbar" alt="frog" />
         <ul>
-            <li>See more frogs</li>
-            <li>See even more frogs</li>
+            <li className='first-in-nav'><a>See more frogs</a></li>
+            <li className='second-in-nav'><a>See even more frogs</a></li>
         </ul>
     </nav>
   )

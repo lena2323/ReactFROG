@@ -1,5 +1,5 @@
 .navbar-container{
-    background-color: aqua;
+    background-color: rgb(176, 221, 221);
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
@@ -12,12 +12,31 @@
     list-style: none;
     flex-flow: row wrap;
     margin-top: auto;
+    height: 100px;
     margin-bottom: auto;
+
+
 }
 
 .navbar-container li{
-    padding-right: 30px;
-    
+    background-color: yellowgreen;
+    padding: 20px;
+    clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+}
+
+.navbar-container li:hover{
+    background-color: aquamarine;
+}
+
+.first-in-nav{
+    margin-right: 0px;
+    margin-right: -200px;
+
+}
+
+.second-in-nav{
+    margin-right: -140px;
+
 }
 
 .frog-in-navbar{
@@ -26,3 +45,10 @@
     margin-bottom: auto;
     margin-left: 30px;
 }
+
+.navbar-container a{
+    padding-right: 100px;
+    margin-right: 70px;
+    padding-left: 120px;
+}
+

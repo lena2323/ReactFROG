@@ -3,7 +3,9 @@
 }
 
 .Frog{
-  height: 30vmin;
+  margin-top: 50px;
+
+  height: 20vmin;
   pointer-events: none;
   margin-bottom: 50px;
 }
