@@ -1,10 +1,14 @@
 import frogimage from './frogimage.svg';
 import './frog.css';
+import './Components/navbar.css';
+
+import Navbar from './Components/Navbar';
 
 function Frog() {
   return (
     <div className="FrogContainer">
       <header className="Frog-header">
+        <Navbar title= 'navbar' />
         <img src={frogimage} className="Frog" alt="frog" />
         <p>
           I DON'T KNOW WHAT THE FUCK IS GOING ON

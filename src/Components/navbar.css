@@ -1,0 +1,14 @@
+.navbar-container{
+    background-color: aqua;
+    
+}
+
+.navbar-container ul{
+    list-style: none;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.navbar-container li{
+    padding: 20px;
+}
