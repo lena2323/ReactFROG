@@ -28,8 +28,9 @@ const ButtonGet = () => {
     return (
       <div>
       <img src = {animalImage} />
-      <p>{name}</p>
-      <p>{type}</p>
+      <p>My name is {name}</p>
+      <p>I am a {type}</p>
+      <p>Am I cute or what?</p>
       </div>
     );
 };
