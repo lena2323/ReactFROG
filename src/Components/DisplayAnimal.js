@@ -1,6 +1,12 @@
 import React, { useEffect, useState } from "react";
 
-const ButtonGet = () => {
+
+
+
+
+
+    
+const DisplayAnimal = () => {
     const [name, setAnimalName] = useState("");
     const [type, setAnimalType] = useState("");
     const [animalImage, setanimalImage] = useState("");
@@ -25,14 +31,18 @@ const ButtonGet = () => {
         fetchData();
     }, []);
 
+    
     return (
-      <div>
-      <img src = {animalImage} />
-      <p>My name is {name}</p>
-      <p>I am a {type}</p>
-      <p>Am I cute or what?</p>
-      </div>
+        <div className="animalContainer">
+            <img src={animalImage} />
+            <p>My name is {name}</p>
+            <p>I am a {type}</p>
+            <p>Am I cute or what?</p>
+        </div>
     );
+
 };
 
-export default ButtonGet;
+
+
+export default DisplayAnimal;

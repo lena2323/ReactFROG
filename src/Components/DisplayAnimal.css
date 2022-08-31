@@ -1,0 +1,21 @@
+.animalContainer{
+    margin-top: 20px;
+    border: 10px rgb(202, 199, 199) solid;
+    max-width: 600px;
+}
+
+.wrapperForAll{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.animalContainer img{
+    padding: 20px;
+    max-height: 400px;
+    max-width: 400px;
+  }
+  
+  .animalContainer p{
+    padding: 10px;
+  }
