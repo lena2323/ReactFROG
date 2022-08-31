@@ -3,6 +3,8 @@ import React, { useEffect, useState } from "react";
 const ButtonGet = () => {
     const [name, setAnimalName] = useState("");
     const [type, setAnimalType] = useState("");
+    const [animalImage, setanimalImage] = useState("");
+
     useEffect(() => {
         const url = "https://zoo-animal-api.herokuapp.com/animals/rand";
 
@@ -13,6 +15,8 @@ const ButtonGet = () => {
                 console.log(data);
                 setAnimalName(data.name);
                 setAnimalType (data.animal_type);
+                setanimalImage (data.image_link);
+
             } catch (error) {
                 console.log("error", error);
             }
@@ -23,6 +27,7 @@ const ButtonGet = () => {
 
     return (
       <div>
+      <img src = {animalImage} />
       <p>{name}</p>
       <p>{type}</p>
       </div>
