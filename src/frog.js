@@ -5,6 +5,7 @@ import Navbar from './Components/Navbar';
 import DisplayAnimal from './Components/DisplayAnimal';
 import './Components/DisplayAnimal.css';
 
+
 function Frog() {
   return (
     <div className="FrogContainer">
@@ -21,8 +22,9 @@ function Frog() {
           rel="noopener noreferrer">
           but the frog fucks good
         </a>
-        <button id='clicktogetanimals'> CLICk </button>
-          <div className="wrapperForAll"></div>
+        <div className="wrapperForAll">
+         <DisplayAnimal/>
+        </div>
       </header>
     </div>
   );
