@@ -1,8 +1,8 @@
 import frogimage from './frogimage.svg';
 import './frog.css';
 import './Components/navbar.css';
-
 import Navbar from './Components/Navbar';
+import ButtonGet from './Components/ButtonGet';
 
 function Frog() {
   return (
@@ -20,6 +20,7 @@ function Frog() {
           rel="noopener noreferrer">
           but the frog fucks good
         </a>
+        <ButtonGet title= 'buttonGet' />
       </header>
     </div>
   );
