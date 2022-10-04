@@ -1,46 +1,55 @@
-import React, { useEffect, useState } from "react";
+
+
+
+import {useState} from 'react';
 
 const DisplayAnimal = () => {
+  const [data, setData] = useState({data: []});
+  const [isLoading, setIsLoading] = useState(false);
+  const [err, setErr] = useState('');
 
+  const handleClick = async () => {
+    setIsLoading(true);
 
+    try {
+      const response = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand'
+      );
 
+      if (!response.ok) {
+        throw new Error(`Error! status: ${response.status}`);
+      }
 
-    const [name, setAnimalName] = useState("");
-    const [type, setAnimalType] = useState("");
-    const [animalImage, setanimalImage] = useState("");
+      const result = await response.json();
+      
 
-    useEffect(() => {
-        const url = "https://zoo-animal-api.herokuapp.com/animals/rand";
+      console.log('result is: ', JSON.stringify(result));
 
-        const fetchData = async () => {
-            try {
-                const response = await fetch(url);
-                const data = await response.json();
-                console.log(data);
-                setAnimalName(data.name);
-                setAnimalType (data.animal_type);
-                setanimalImage (data.image_link);
+      setData(result);
+    } catch (err) {
+      setErr(err.message);
+    } finally {
+      setIsLoading(false);
+    }
+  };
 
-            } catch (error) {
-                console.log("error", error);
-            }
-        };
+  console.log(data);
 
-        fetchData();
-    }, []);
+  return (
+    <div>
+      {err && <h2>{err}</h2>}
 
-    return (
+      <button onClick={handleClick}>Fetch data</button>
+
+      {isLoading && <h2>Loading...</h2>}
+
         <div className="animalContainer">
-        <img src={animalImage} />
-        <p>My name is {name}</p>
-        <p>I am a {type}</p>
+        <img src={data.image_link} />
+        <p>My name is {data.name}</p>
+        <p>I am a {data.animal_type}</p>
         <p>Am I cute or what?</p>
         </div>
-    );
-    
-   
-
+    </div>
+  );
 };
-
 
 export default DisplayAnimal;
