@@ -27,13 +27,24 @@
     padding: 20px;
     clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
     letter-spacing: 0.1em;
-    padding-top: 26px;
+    padding-top: 33px;
 
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    cursor:pointer;
 }
 
 .navbar-container li:hover{
     background-color: yellowgreen;
 }
+
+
+.navbar-container li:active{
+    background-color: rgb(105, 141, 34);
+  
+  }
 
 .first-in-nav{
     margin-right: 0px;

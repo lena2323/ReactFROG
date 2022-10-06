@@ -53,7 +53,7 @@ const DisplayAnimal = () => {
     <div>
       {err && <h2>{err}</h2>}
 
-      <button onClick={handleClick}>Fetch data</button>
+      <button onClick={handleClick} className="universal-button">Fetch data</button>
       {isLoading && <h2>Loading...</h2>}
       {yyy}
 
