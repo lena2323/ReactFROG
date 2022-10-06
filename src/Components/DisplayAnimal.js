@@ -44,7 +44,7 @@ const DisplayAnimal = () => {
       }
 
       if (result.animal_type == 'Amphibian'){
-        setMessage("I eat flys and still live, you can survive without the cooker too!") 
+        setMessage("I eat flys and I'm still alive, you can survive without the cooker too!") 
       }
       
       if (result.animal_type == 'Fish'){
