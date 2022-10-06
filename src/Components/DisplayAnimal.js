@@ -25,14 +25,14 @@ const DisplayAnimal = () => {
       }
 
       const result = await response.json();
-      console.log(data);
+      console.log(result);
       setData(result);
 
       const ehe = 
       <div className="animalContainer">
-      <img src={data.image_link} />
-      <p>My name is {data.name}</p>
-      <p>I am a {data.animal_type}</p>
+      <img src={result.image_link} />
+      <p>My name is {result.name}</p>
+      <p>I am a {result.animal_type}</p>
       <p>Am I cute or what?</p>
       </div>
       setYYY(ehe);
