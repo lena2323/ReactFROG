@@ -1,6 +1,3 @@
-
-
-
 import {useState} from 'react';
 
 const DisplayAnimal = () => {
@@ -9,7 +6,6 @@ const DisplayAnimal = () => {
   const [err, setErr] = useState('');
   const [yyy, setYYY] = useState('');
   
-
   const handleClick = async () => {
     setIsLoading(true);
 
@@ -17,8 +13,6 @@ const DisplayAnimal = () => {
 
       const response = await fetch('https://zoo-animal-api.herokuapp.com/animals/rand'
       );
-
-      
 
       if (!response.ok) {
         throw new Error(`Error! status: ${response.status}`);
@@ -37,12 +31,10 @@ const DisplayAnimal = () => {
       </div>
       setYYY(ehe);
 
-
     } catch (err) {
       setErr(err.message);
     } finally {
       setIsLoading(false);
-      
     };
 
   };
@@ -59,7 +51,6 @@ const DisplayAnimal = () => {
 
     </div>
     
-
   );
 };
 
