@@ -4,7 +4,7 @@
 import {useState} from 'react';
 
 const DisplayAnimal = () => {
-  const [data, setData] = useState({data: []});
+  const [data, setData] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [err, setErr] = useState('');
   const [yyy, setYYY] = useState('');
@@ -35,18 +35,16 @@ const DisplayAnimal = () => {
       <p>I am a {data.animal_type}</p>
       <p>Am I cute or what?</p>
       </div>
-
       setYYY(ehe);
-
 
 
     } catch (err) {
       setErr(err.message);
     } finally {
       setIsLoading(false);
+      
     };
 
-    
   };
 
 
@@ -54,6 +52,7 @@ const DisplayAnimal = () => {
 
     <div>
       {err && <h2>{err}</h2>}
+
       <button onClick={handleClick}>Fetch data</button>
       {isLoading && <h2>Loading...</h2>}
       {yyy}
