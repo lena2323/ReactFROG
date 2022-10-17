@@ -29,6 +29,13 @@
     max-width: 500px;
     margin: auto;
     border: 10px rgb(202, 199, 199) solid;
-    border-top: none;
     padding: 10px 20px 10px 20px;
+  }
+
+  .insp-border-top{
+    max-width: 500px;
+    margin: auto;
+    border: 10px rgb(202, 199, 199) solid;
+    padding: 10px 20px 10px 20px;
+    border-top: none;
   }
