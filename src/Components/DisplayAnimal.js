@@ -6,7 +6,8 @@ const DisplayAnimal = () => {
   const [err, setErr] = useState('');
   const [animalInfo, setanimalInfo] = useState('');
   const [message, setMessage] = useState('');
-  const [isActive, setIsActive] = useState(false);
+  const [messageIsShown, setmessageIsShown] = useState(false);
+
 
   const handleClick = async () => {
     setIsLoading(true);
@@ -32,8 +33,7 @@ const DisplayAnimal = () => {
       <p>Am I cute or what?</p>
       </div>
 
-      setIsActive(true);
-
+      setmessageIsShown(true)
       if (result.animal_type == 'Mammal'){
         setMessage("I heard there's milk missing in shops in yer country.... Milk this! *shows middle finger*") 
       }
@@ -69,10 +69,10 @@ const DisplayAnimal = () => {
     <div>
       {err && <h2>{err}</h2>}
 
-      <button onClick={handleClick} className="universal-button">Fetch data</button>
+      <button onClick={handleClick} className="universal-button">Click to see an interesting animal</button>
       {isLoading && <h2>Loading...</h2>}
       {animalInfo} 
-      <div className={isActive ? 'insp-border-top' : 'inspirational-message-container'}>
+      <div className={ messageIsShown ? 'insp-border-top' : 'inspirational-message-container-none'}>
       Inspirational message: <br></br> {message}
       </div>
     </div>

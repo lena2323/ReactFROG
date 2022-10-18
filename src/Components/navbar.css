@@ -19,7 +19,6 @@
     overflow: hidden;
 
 }
-/**ddddddddddddddddddd*/
 
 .navbar-container li{
     background-color: rgb(102, 102, 102);
@@ -56,7 +55,7 @@ li.second-in-nav {
     margin-right: -160px;
 }
 
-.frog-in-navbar{
+.icon-in-navbar{
     height: 70px;
     margin-top: auto;
     margin-bottom: auto;
@@ -67,5 +66,12 @@ li.second-in-nav {
     padding-right: 100px;
     margin-right: 70px;
     padding-left: 50px;
+    text-decoration: none; 
+
 }
 
+
+.navbar-container a:visited{
+    color: white;
+    text-decoration: none;
+}
