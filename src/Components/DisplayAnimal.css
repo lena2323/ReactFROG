@@ -1,12 +1,12 @@
 
 
 .animalContainer{
-  margin-top: 20px;
   border: 10px rgb(202, 199, 199) solid;
   min-height: 300px;
   max-width: 500px;
   color: white;
   margin: auto;
+  margin-top: 70px;
 }
 
 .animalContainer img{
@@ -19,6 +19,7 @@
   .animalContainer p{
     padding: 10px;
     font-size: 25px;
+    line-height: 0px;
   }
 
   .inspirational-message-container-none{
@@ -34,4 +35,12 @@
     padding: 10px 20px 10px 20px;
     border-top: none;
     max-width: 460px;
+    color: white;
+    font-family: monospace;
+    margin-bottom: 30px;
+
+}
+
+.loading{
+  color: white;
 }

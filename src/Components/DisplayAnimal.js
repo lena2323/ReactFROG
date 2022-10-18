@@ -68,13 +68,12 @@ const DisplayAnimal = () => {
 
     <div>
       {err && <h2>{err}</h2>}
-
-      <button onClick={handleClick} className="universal-button">Click to see an interesting animal</button>
-      {isLoading && <h2>Loading...</h2>}
+      {isLoading && <h2 className='loading'>Loading...</h2>}
       {animalInfo} 
       <div className={ messageIsShown ? 'insp-border-top' : 'inspirational-message-container-none'}>
       Inspirational message: <br></br> {message}
       </div>
+      <button onClick={handleClick} className="universal-button">Click to see an interesting animal</button>
     </div>
     
   );
