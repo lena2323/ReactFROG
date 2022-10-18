@@ -7,6 +7,7 @@ const DisplayAnimal = () => {
   const [animalInfo, setanimalInfo] = useState('');
   const [message, setMessage] = useState('');
   const [messageIsShown, setmessageIsShown] = useState(false);
+  const [buttonInTheMiddle, setbuttonInTheMiddle] = useState(true);
 
 
   const handleClick = async () => {
@@ -34,6 +35,7 @@ const DisplayAnimal = () => {
       </div>
 
       setmessageIsShown(true)
+      setbuttonInTheMiddle(false)
       if (result.animal_type == 'Mammal'){
         setMessage("I heard there's milk missing in shops in yer country.... Milk this! *shows middle finger*") 
       }
@@ -73,7 +75,7 @@ const DisplayAnimal = () => {
       <div className={ messageIsShown ? 'insp-border-top' : 'inspirational-message-container-none'}>
       Inspirational message: <br></br> {message}
       </div>
-      <button onClick={handleClick} className="universal-button">Click to see an interesting animal</button>
+      <button onClick={handleClick} className= { buttonInTheMiddle ? "buttonInTheMiddle" : "universal-button" }>Click to see an interesting animal</button>
     </div>
     
   );
